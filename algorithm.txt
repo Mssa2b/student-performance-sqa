@@ -1,0 +1,22 @@
+Algorithm: Calculate Student Performance Status
+
+Input: student_scores[] , attendance_percentage
+Output: performance_status
+
+1. Set total = 0
+2. For each score in student_scores
+      total = total + score
+3. average = total / number of scores
+
+4. If attendance_percentage < 75
+      performance_status = "At Risk"
+   Else
+      If average >= 85
+           performance_status = "Excellent"
+      Else if average >= 60
+           performance_status = "Pass"
+      Else
+           performance_status = "Fail"
+
+5. Display performance_status
+
